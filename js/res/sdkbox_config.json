@@ -1,0 +1,59 @@
+{
+    "android": {
+        "PhunwareAds": {
+            "debug": true, 
+            "ads": {
+                "video": {
+                    "type": "video", 
+                    "id": "75395", 
+                    "placement_type": "all"
+                }, 
+                "reward": {
+                    "type": "reward", 
+                    "id": "78393"
+                }, 
+                "banner": {
+                    "test_mode": true, 
+                    "type": "banner", 
+                    "id": "7268"
+                }, 
+                "page": {
+                    "type": "page", 
+                    "id": "76663"
+                }, 
+                "interstitial": {
+                    "type": "interstitial", 
+                    "id": "7271"
+                }
+            }
+        }
+    }, 
+    "ios": {
+        "PhunwareAds": {
+            "debug": true, 
+            "ads": {
+                "video": {
+                    "type": "video", 
+                    "id": "22219"
+                }, 
+                "reward": {
+                    "type": "reward", 
+                    "id": "78393"
+                }, 
+                "banner": {
+                    "test_mode": true, 
+                    "type": "banner", 
+                    "id": "7268"
+                }, 
+                "page": {
+                    "type": "page", 
+                    "id": "76663"
+                }, 
+                "interstitial": {
+                    "type": "interstitial", 
+                    "id": "7271"
+                }
+            }
+        }
+    }
+}
