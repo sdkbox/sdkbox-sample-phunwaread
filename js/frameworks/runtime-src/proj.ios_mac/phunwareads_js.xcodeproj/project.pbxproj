@@ -43,6 +43,7 @@
 		68DD40FD88A0720123D8669D /* PWAds.bundle/ in Resources */ = {isa = PBXBuildFile; fileRef = B4AC4616B58923EF0E0E6B08 /* PWAds.bundle/ */; };
 		6AF84C43BF80E5C30D987DFF /* PWAdvertising.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49374990B4075E5CFD7C6B47 /* PWAdvertising.framework */; };
 		6E144EF4830450EE49A515AF /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 526041819F61614826BB19BD /* libcocos2d iOS.a */; };
+		6E5B4CC6A27BF2E6A340B25D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 831A444FADFB55AB09623608 /* libsqlite3.tbd */; };
 		91CF47128D4695FDC4D1D68B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E443E8BAE48FBDB17E388E /* StoreKit.framework */; };
 		989A4AAFA1EECBE3AD9E9694 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E84832A65D9411CB114EAF /* CoreTelephony.framework */; };
 		9F1D67E41E28C142000A2B0F /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1D67E31E28C142000A2B0F /* GameController.framework */; };
@@ -120,6 +121,7 @@
 		526041819F61614826BB19BD /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "$(SRCROOT)/../../../../../sdkbox-cocos2d-x-binary/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
 		671A491884E0C7533ED0085C /* script */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = script; path = ../../../script; sourceTree = "<group>"; };
 		7D5E414490B1DA7565D2ACDD /* PluginPhunwareAdsJSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginPhunwareAdsJSHelper.h; path = ../Classes/PluginPhunwareAdsJSHelper.h; sourceTree = SOURCE_ROOT; };
+		831A444FADFB55AB09623608 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = file.tbd; name = libsqlite3.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
 		87D4C4441AB2187000F68C44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		87F74295814D3EB49B82BE1E /* PluginPhunwareAdsJS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginPhunwareAdsJS.cpp; path = ../Classes/PluginPhunwareAdsJS.cpp; sourceTree = SOURCE_ROOT; };
 		88044567976388AA990E6BEF /* SDKBoxJSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDKBoxJSHelper.h; path = ../Classes/SDKBoxJSHelper.h; sourceTree = SOURCE_ROOT; };
@@ -201,6 +203,7 @@
 				14A54BF3AC5EB35031920C9C /* CoreLocation.framework in Frameworks */,
 				FE32433FB466EF594FA4EAE1 /* MobileCoreServices.framework in Frameworks */,
 				3BA042EBBDC8041ABA81244C /* WebKit.framework in Frameworks */,
+				6E5B4CC6A27BF2E6A340B25D /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +316,7 @@
 				C3CF44BEA19AA2557915E710 /* CoreLocation.framework */,
 				397E4DB7BFF6F3216B60DCAB /* MobileCoreServices.framework */,
 				173848B2A52B265B6C9FE566 /* WebKit.framework */,
+				831A444FADFB55AB09623608 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -399,6 +403,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					A922753C1517C094001B78AA = {
+						DevelopmentTeam = KF2P999MJS;
+					};
+				};
 			};
 			buildConfigurationList = A92275371517C094001B78AA /* Build configuration list for PBXProject "phunwareads_js" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -546,6 +555,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = KF2P999MJS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -562,7 +572,7 @@
 					"$(SRCROOT)/../../../../../sdkbox-cocos2d-x-binary/tools/simulator/libsimulator/lib/protobuf-lite",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../../../sdkbox-cocos2d-x-binary/prebuilt/ios",
 					"\"sdkbox.framework\"",
@@ -585,6 +595,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = KF2P999MJS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -601,7 +612,7 @@
 					"$(SRCROOT)/../../../../../sdkbox-cocos2d-x-binary/tools/simulator/libsimulator/lib/protobuf-lite",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../../../sdkbox-cocos2d-x-binary/prebuilt/ios",
 					"\"sdkbox.framework\"",

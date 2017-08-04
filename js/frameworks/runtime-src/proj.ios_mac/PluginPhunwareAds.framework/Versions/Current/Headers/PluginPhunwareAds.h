@@ -8,6 +8,7 @@
 #define _PLUGIN_PHUNWAREADS_H_
 
 #include <string>
+#include <map>
 
 namespace sdkbox {
 
@@ -64,6 +65,11 @@ namespace sdkbox {
          * get remaining views of rewarded video.
          */
         static int getRemainingViews(const std::string& name);
+
+        /*!
+         * set custom data of rewarded video
+         */
+        static void setCustomData(const std::string& name, const std::map<std::string, std::string>& data);
         };
 
     class PhunwareAdsListener {
@@ -100,7 +106,7 @@ namespace sdkbox {
         /*!
          * reward user with specifying ad name
          */
-        virtual void reward(const std::string& name, float amount, const std::string& currency) {}
+        virtual void reward(const std::string& name, float amount, const std::string& currency, const std::map<std::string, std::string>& customData) {}
 
     };
 }
